@@ -32,12 +32,12 @@ class Controller:
                             self.store_tweets.append(tweet)
                 return {
                     'jenis':jenis,
-                    'status_code':00, #Sukses
+                    'status_code':1, #Sukses
                     'msg':"success",
                     'data': self.store_tweets
                 }, 200
         except:
               return {
-                'status_code':40, #error
+                'status_code':0, #error
                 'msg':"error",
             }, 400
