@@ -29,7 +29,7 @@ ini adalah merupakan contoh request
 }
 ```
 
-## Responses
+## Response Example
 ini adalah response ketika disubmit
 
 ```javascript
