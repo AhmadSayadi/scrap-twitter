@@ -24,7 +24,7 @@ POST https://twit.ahmadsayadi.com/api/twit
 | :--- | :--- | :--- |
 | `query` | `string` | **Required**. bisa menggukan query di snscrape |
 | `limit` | `umber` | **Required**. limit data yang diinginkan |
-| `jenis` | `string` | **Required**. `Cari Nama`/`hashtag`/`String Kosong` |
+| `jenis` | `string` | **Required**. `Cari Nama`/`Hashtag`/`String Kosong` |
 | `lokasi` | `string` | **Required**. `lotitude, longitud`/`String Kosong` |
 
 **contoh** Lat lang: -7.25535576475254, 112.75319583481414, 10km (Surabaya)
