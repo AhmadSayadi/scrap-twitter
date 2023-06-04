@@ -108,7 +108,9 @@ ini adalah response ketika disubmit
 ```
 
 `msg` adalah indikator pesan sebuah data sukses atau tidak
+
 `status_code` untuk atribut kode sukses atau tidak.
+
 `data` kumpulan data hasil scrape
 
 
