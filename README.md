@@ -5,9 +5,8 @@ Twitter Scrap ini menggunakan Flask Framework dan lib snscra
 
 # Introduction
 run python app.py
-```
 ```http
-POST {{url}}/api/twit
+POST twit.ahmadsayadi.com/api/twit
 ```
 
 ## SNScrap QUery
@@ -24,18 +23,23 @@ POST {{url}}/api/twit
 | `query` | `string` | **Required**. bisa menggukan query di snscrape |
 | `limit` | `umber` | **Required**. limit data yang diinginkan |
 | `jenis` | `string` | **Required**. `Cari Nama`/`hashtag`/`String Kosong` |
+| `lokasi` | `string` | **Required**. `lotitude, longitud`/`String Kosong` |
 
+**contoh** Lat lang: -7.25535576475254, 112.75319583481414, 10km (Surabaya)
 
 ## Example Request
 ini adalah merupakan contoh request
-
 ```javascript
 {
     "query":"Ahmadsayadi",
     "limit":100,
-    "jenis":""
+    "jenis":"",
+    "lokasi":""
 }
 ```
+
+
+
 ## Response Example
 ini adalah response ketika disubmit
 ```javascript
@@ -97,7 +101,9 @@ ini adalah response ketika disubmit
     ],
     "jenis": "",
     "msg": "success",
-    "status_code": 0
+    "query": "bakso",
+    "status_code": 1,
+    "total_data": 5
 }
 ```
 
