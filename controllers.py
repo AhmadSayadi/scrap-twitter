@@ -41,3 +41,21 @@ class Controller:
                 'status_code':0, #error
                 'msg':"error",
             }, 400
+
+    def gettwit2(self):
+        self.store_tweets=[]
+        # -7.256377485031949, 112.75319583099417
+        query = "bakso near:'Surabaya'",
+        limit = 100
+    
+        for tweet in twitterScraper.TwitterHashtagScraper(query).get_items():
+            if len(self.store_tweets) == limit:
+                    break
+            else:
+                self.store_tweets.append(tweet)
+        
+        return {
+            'status_code':1, #Sukses
+            'msg':"success",
+            'data': self.store_tweets
+        }, 200

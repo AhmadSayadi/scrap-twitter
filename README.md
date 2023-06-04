@@ -1,14 +1,22 @@
 # Twitter Scrap Data
-Twitter Scrap ini menggunakan Flask Framework dan lib snscrap
-
+Twitter Scrap ini menggunakan Flask Framework dan lib snscra
+**SNScrape** :  <https://github.com/JustAnotherArchivist/snscrape/>
+**Flask** :  <https://flask.palletsprojects.com/en/2.3.x//>
 
 # Introduction
-
 run python app.py
-
+```
 ```http
 POST {{url}}/api/twit
 ```
+
+## SNScrap QUery
+| Parameter | Description |
+| :---  | :--- |
+| `'its the elephant since:2020-06-01 until:2020-07-31'` | Berdasarkan Kata dengan Rentan Waktu |
+| `'from:Ahmadsayadi_ since:2020-06-01 until:2020-07-31'` | Berdasarkan username dengan Rentan Waktu |
+
+
 
 ## Request
 | Parameter | Type | Description |
@@ -28,10 +36,8 @@ ini adalah merupakan contoh request
     "jenis":""
 }
 ```
-
 ## Response Example
 ini adalah response ketika disubmit
-
 ```javascript
 {
     "data": [

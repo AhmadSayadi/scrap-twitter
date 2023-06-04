@@ -13,6 +13,11 @@ def twitdata():
     controller = Controller()
     return controller.gettwit()
 
+@app.route("/api/twit2", methods=['GET'])
+def twitdata2():
+    controller = Controller()
+    return controller.gettwit2()
+
 
 
 if __name__ == "__main__":
