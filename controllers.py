@@ -14,7 +14,7 @@ class Controller:
                 if(request_data['lokasi']):
                     lokasi=' geocode:"{}"'.format(request_data['lokasi'])
                 # return print('tes',lokasi)
-                query = request_data['query']+lokasi
+                query = query1+lokasi
                 if(jenis=='Hashtag') :
                     for tweet in twitterScraper.TwitterHashtagScraper(query).get_items():
                         if len(self.store_tweets) == limit:
@@ -22,7 +22,7 @@ class Controller:
                         else:
                             self.store_tweets.append(tweet)
                 if(jenis=='Cari Nama') :
-                    query = "'from:"+request_data['query']+"'"
+                    query = "'from:"+query1+"'"
                     for tweet in twitterScraper.TwitterHashtagScraper(query).get_items():
                         if len(self.store_tweets) == limit:
                             break
