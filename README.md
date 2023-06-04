@@ -8,7 +8,7 @@ Twitter Scrap ini menggunakan Flask Framework dan lib snscra
 # Introduction
 run python app.py
 ```http
-POST twit.ahmadsayadi.com/api/twit
+POST https://twit.ahmadsayadi.com/api/twit
 ```
 
 ## SNScrap QUery
