@@ -7,10 +7,14 @@ class Controller:
             self.store_tweets=[]
             if request.method == 'POST':
                 request_data = request.get_json()
-                query = request_data['query']
+                query1 = request_data['query']
                 limit = request_data['limit']
                 jenis = request_data['jenis']
-
+                lokasi=''
+                if(request_data['lokasi']):
+                    lokasi=' geocode:"{}"'.format(request_data['lokasi'])
+                # return print('tes',lokasi)
+                query = request_data['query']+lokasi
                 if(jenis=='Hashtag') :
                     for tweet in twitterScraper.TwitterHashtagScraper(query).get_items():
                         if len(self.store_tweets) == limit:
@@ -31,6 +35,8 @@ class Controller:
                         else:
                             self.store_tweets.append(tweet)
                 return {
+                    'query':query,
+                    'total_data':limit,
                     'jenis':jenis,
                     'status_code':1, #Sukses
                     'msg':"success",
