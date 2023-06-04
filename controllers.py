@@ -35,7 +35,6 @@ class Controller:
                         else:
                             self.store_tweets.append(tweet)
                 return {
-                    'query':query,
                     'total_data':limit,
                     'jenis':jenis,
                     'status_code':1, #Sukses
