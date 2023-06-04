@@ -1,4 +1,4 @@
-# Twitter Scrap Data
+# Twitter Scrape Data
 Twitter Scrap ini menggunakan Flask Framework dan lib snscra
 
 **SNScrape** :  <https://github.com/JustAnotherArchivist/snscrape/>
@@ -11,7 +11,7 @@ run python app.py
 POST https://twit.ahmadsayadi.com/api/twit
 ```
 
-## SNScrap QUery
+## SNScrape QUery
 | Parameter | Description |
 | :---  | :--- |
 | `'its the elephant since:2020-06-01 until:2020-07-31'` | Berdasarkan Kata dengan Rentan Waktu |
@@ -116,7 +116,7 @@ ini adalah response ketika disubmit
 `data` kumpulan data hasil scrape
 
 
-## Status Codes Response
+## Status Code Response
 Status Code Response
 
 | Status Code | Description |
@@ -124,7 +124,7 @@ Status Code Response
 | 0 | `error` |
 | 1 | `success` |
 
-## Status Codes
+## Status Code
 | Status Code | Description |
 | :--- | :--- |
 | 200 | `OK` |
