@@ -23,7 +23,7 @@ POST https://twit.ahmadsayadi.com/api/twit
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `query` | `string` | **Required**. bisa menggukan query di snscrape |
-| `limit` | `umber` | **Required**. limit data yang diinginkan |
+| `limit` | `number` | **Required**. limit data yang diinginkan |
 | `jenis` | `string` | **Required**. `Cari Nama`/`Hashtag`/`String Kosong` |
 | `lokasi` | `string` | **Required**. `lotitude, longitud`/`String Kosong` |
 
