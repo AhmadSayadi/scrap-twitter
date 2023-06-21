@@ -11,7 +11,7 @@ run python app.py
 POST https://twit.ahmadsayadi.com/api/twit
 ```
 
-## SNScrape QUery
+## SNScrape Query
 | Parameter | Description |
 | :---  | :--- |
 | `'its the elephant since:2020-06-01 until:2020-07-31'` | Berdasarkan Kata dengan Rentan Waktu |
