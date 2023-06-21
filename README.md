@@ -1,8 +1,7 @@
 # Twitter Scrape Data
-Twitter Scrap ini menggunakan Flask Framework dan lib snscra
+Twitter Scrap ini menggunakan Flask Framework dan lib snscrape
 
 **SNScrape** :  <https://github.com/JustAnotherArchivist/snscrape/>
-
 **Flask** :  <https://flask.palletsprojects.com/en/2.3.x//>
 
 # Introduction
