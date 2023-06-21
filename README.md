@@ -6,7 +6,13 @@ Twitter Scrap ini menggunakan Flask Framework dan lib snscrape
 **Flask** :  <https://flask.palletsprojects.com/en/2.3.x//>
 
 # Introduction
-run python app.py
+
+
+```javascript
+    run python app.py
+```
+
+# API URL
 ```http
 POST https://twit.ahmadsayadi.com/api/twit
 ```
