@@ -22,15 +22,15 @@ POST https://twit.ahmadsayadi.com/api/twit
 ## Request
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `query` | `string` | **Required**. bisa menggukan query di snscrape |
+| `query` | `string` | **Required**. bisa menggunakan query di snscrape |
 | `limit` | `number` | **Required**. limit data yang diinginkan |
 | `jenis` | `string` | **Required**. `Cari Nama`/`Hashtag`/`String Kosong` |
-| `lokasi` | `string` | **Required**. `lotitude, longitud`/`String Kosong` |
+| `lokasi` | `string` | **Required**. `latitude, longitude`/`String Kosong` |
 
 **contoh** Lat lang: -7.25535576475254, 112.75319583481414, 10km (Surabaya)
 
 ## Example Request
-ini adalah merupakan contoh request
+ini adalah contoh request
 ```javascript
 {
     "query":"Ahmadsayadi",
