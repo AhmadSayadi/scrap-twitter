@@ -1,17 +1,23 @@
-# Twitter Scrap Data
-Twitter Scrap ini menggunakan Flask Framework dan lib snscra
+# Twitter Scrape Data
+Twitter Scrap ini menggunakan Flask Framework dan lib snscrape
 
 **SNScrape** :  <https://github.com/JustAnotherArchivist/snscrape/>
 
 **Flask** :  <https://flask.palletsprojects.com/en/2.3.x//>
 
 # Introduction
-run python app.py
+
+
+```javascript
+    run python app.py
+```
+
+# API URL
 ```http
 POST https://twit.ahmadsayadi.com/api/twit
 ```
 
-## SNScrap QUery
+## SNScrape Query
 | Parameter | Description |
 | :---  | :--- |
 | `'its the elephant since:2020-06-01 until:2020-07-31'` | Berdasarkan Kata dengan Rentan Waktu |
@@ -22,15 +28,15 @@ POST https://twit.ahmadsayadi.com/api/twit
 ## Request
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `query` | `string` | **Required**. bisa menggukan query di snscrape |
-| `limit` | `umber` | **Required**. limit data yang diinginkan |
-| `jenis` | `string` | **Required**. `Cari Nama`/`hashtag`/`String Kosong` |
-| `lokasi` | `string` | **Required**. `lotitude, longitud`/`String Kosong` |
+| `query` | `string` | **Required**. bisa menggunakan query di snscrape |
+| `limit` | `number` | **Required**. limit data yang diinginkan |
+| `jenis` | `string` | **Required**. `Cari Nama`/`Hashtag`/`String Kosong` |
+| `lokasi` | `string` | **Required**. `latitude, longitude`/`String Kosong` |
 
 **contoh** Lat lang: -7.25535576475254, 112.75319583481414, 10km (Surabaya)
 
 ## Example Request
-ini adalah merupakan contoh request
+ini adalah contoh request
 ```javascript
 {
     "query":"Ahmadsayadi",
@@ -116,7 +122,7 @@ ini adalah response ketika disubmit
 `data` kumpulan data hasil scrape
 
 
-## Status Codes Response
+## Status Code Response
 Status Code Response
 
 | Status Code | Description |
@@ -124,7 +130,7 @@ Status Code Response
 | 0 | `error` |
 | 1 | `success` |
 
-## Status Codes
+## Status Code
 | Status Code | Description |
 | :--- | :--- |
 | 200 | `OK` |
