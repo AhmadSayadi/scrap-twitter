@@ -36,16 +36,23 @@ class Controller:
                             self.store_tweets.append(tweet)
                 return {
                     'query':query,
-                    'total_data':limit,
+                    'total_data':len(self.store_tweets),
                     'jenis':jenis,
                     'status_code':1, #Sukses
                     'msg':"success",
                     'data': self.store_tweets
                 }, 200
+            if request.method == 'GET':
+               return {
+                    'status_code':0, #error
+                    'msg':"error",
+                    'description':"Tidak Bisa GET",
+                }, 400
         except:
               return {
                 'status_code':0, #error
                 'msg':"error",
+                'description':"Error",
             }, 400
 
     def gettwit2(self):
